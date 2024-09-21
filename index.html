@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mycars</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: rgb(16, 16, 16);
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    nav{
+      height: 60px;
+      width: 100%;
+      background-color: rgb(8, 8, 8);
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      box-shadow: 1px 2px 7px rgb(36, 35, 35);
+      position: fixed;
+      z-index: 100;
+    }
+    .logo{
+      font-size: 30px;
+      font-weight: 700;
+    }
+    span{
+      color: red;
+    }
+    .links{
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 18px;
+      padding: 5px;
+    }
+    
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      
+      opacity: 0.6;
+    }
+    .hero{
+      height: 90vh;
+      width: 100%;
+      background-image: url(https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .slogan{
+      height: 30%;
+      width: 40%;
+      background-color: white;
+      color: rgb(240, 18, 18);
+      opacity: 0.7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .slogan h1{
+      font-size: 35px;
+    }
+    .slogan input{
+      margin-top: 30px;
+      height: 35px;
+      width: 300px;
+      padding: 10px;
+    }
+    .popular{
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 15px;
+      transition: .5s;
+    }
+    .cover{
+      height: 350px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card{
+      
+      height: 300px;
+      width: 300px;
+      transition: .5s;
+ 
+    }
+    .card:hover{
+      transform: scale(1.1);
+    }
+    .card img{
+      
+      height: 100%;
+      width: 110%;
+    }
+
+    
+    .tt{
+      margin-left: 20px;
+    }
+
+    ::-webkit-scrollbar{
+      background-color: black;
+    }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home"><div class="logo"><span>My</span>Cars</div></a>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#popular">Popular</a>
+      <a href="#trending">Trending</a>
+     
+    </div>
+  </nav>
+  <div class="hero" id="home">
+    <div class="slogan">
+      <h1>Find Your Luxury</h1>
+      <h3>at MyCars</h3>
+      <input type="search" placeholder="Search...">
+    </div>
+  </div>
+
+<h1 class="tt">Popular Cars</h1>
+  <div class="popular" id="popular">
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/175568/pexels-photo-175568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/2664399/pexels-photo-2664399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+
+   
+ 
+  </div>
+
+
+
+  <h1 class="tt">Trending Cars</h1>
+  <div class="popular" id="trending">
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/175568/pexels-photo-175568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/2664399/pexels-photo-2664399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+    <div class="cover">
+      <div class="card"><img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+      <h3>Black lamborghini</h3>
+    </div>
+
+   
+ 
+  </div>
+</body>
+</html>
